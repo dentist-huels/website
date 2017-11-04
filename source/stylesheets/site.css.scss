@@ -1,0 +1,84 @@
+* {
+    font-size: 16px;
+}
+
+body {
+    background: #fff;
+    font-family: 'Open Sans', sans-serif;
+}
+
+
+.wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.logo {
+    margin: 2em 0;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+
+    .logo__claim {
+        font-size: 1.2em;
+        font-weight: 600;
+        line-height: 1.4em;
+    }
+    .logo__dentist {
+        font-size: 1em;
+        line-height: 1.2em;
+    }
+}
+
+.hello {
+    width: 660px;
+}
+
+.information {
+    .information__headline {
+        font-size: 1.2em;
+        font-weight: 600;
+    }
+
+    margin: 2em 0;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+    .information__box {
+        margin: 0 3em;
+    }
+    .openinghrs {
+        display: flex;
+        flex-direction: column;
+
+        .openinghrs__hrs {
+            font-size: 1em;
+            line-height: 1.5em;
+            display: flex;
+            flex-direction: row;
+            .day {
+                width: 2em;
+            }
+            .block {
+                margin: 0 1em;
+                width: 4em;
+                .block--hidden {
+                    width: 4em;
+                }
+            }
+        }
+    }
+
+    .contact {
+        display: flex;
+        flex-direction: column;
+
+
+        .address {
+            line-height: 1.5em;
+            font-size: 1em;
+        }
+    }
+}
