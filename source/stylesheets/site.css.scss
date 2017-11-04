@@ -5,6 +5,21 @@
 body {
     background: #fff;
     font-family: 'Open Sans', sans-serif;
+    color: #222233;
+}
+
+hr {
+    margin: 40px;
+    text-align: center;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+
+hr:after {
+    content: "* * *";
+    color: #222233;
 }
 
 
@@ -22,11 +37,11 @@ body {
     .logo__claim {
         font-size: 1.2em;
         font-weight: 600;
-        line-height: 1.4em;
+        line-height: 1.9em;
     }
     .logo__dentist {
         font-size: 1em;
-        line-height: 1.2em;
+        line-height: 1.5em;
     }
 }
 
@@ -48,37 +63,33 @@ body {
 
     .information__box {
         margin: 0 3em;
-    }
-    .openinghrs {
+        width: 16em;
         display: flex;
         flex-direction: column;
-
-        .openinghrs__hrs {
-            font-size: 1em;
-            line-height: 1.5em;
-            display: flex;
-            flex-direction: row;
-            .day {
-                width: 2em;
-            }
-            .block {
-                margin: 0 1em;
-                width: 4em;
-                .block--hidden {
-                    width: 4em;
-                }
-            }
-        }
     }
 
-    .contact {
+
+
+    .information__line {
+        font-size: 1em;
+        line-height: 1.5em;
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
 
 
-        .address {
-            line-height: 1.5em;
-            font-size: 1em;
+        .block {
+            margin: 0 0.5em;
+            width: 4em;
+            &.block--auto {
+                width: auto ;
+            }
+            &:first-child {
+              margin-left: 0.5em;
+            }
+
+            &.block--small {
+                width: 2em ;
+            }
         }
     }
 }
