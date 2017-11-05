@@ -1,31 +1,33 @@
 <div class="main">
-    <div class="logo">
-        <span class="logo__claim">Zahnärzte Hülser Markt</span>
-        <span class="logo__dentist">Dr. Felix Rehberg</span>
-        <span class="logo__dentist">Dr. Charlotte Schürmann</span>
-    </div>
+    <%= partial "logo" %>
     <div class="faces">
-        <img src="images/faces.png" style="width: 660px; height: auto;" />
+        <img src="images/zahnaerzte-huels.png" class="faces" alt="Zahnärzte Hülser Markt - Felix Rehberg und Charlotte Schürmann" />
     </div>
     <div class="information">
         <div class="information__box">
             <h1 class="information__headline">Kontakt</h1>
             <span class="information__line"><div class="block block--auto">Hülser Markt 2</div></span>
             <span class="information__line"><div class="block block--auto">47839 Krefeld</div></span>
-            <span class="information__line"><div class="block block--small">Tel</div> <div class="block block--auto">02151</div> <div class="block">730126</div></span>
-            <span class="information__line"><div class="block block--small">Mail</div><div class="block block--auto">kontakt@huels.com</div></span>
+            <span class="information__line"><div class="block block--small">Tel</div> <div class="block block--auto">02151 730126</div></span>
+            <span class="information__line"><div class="block block--small">Mail</div><div class="block block--auto"><a href="mailto:info@huels.dentist">info@huels.dentist</a></div></span>
         </div>
         <div class="information__box">
             <h1 class="information__headline">Öffnungszeiten</h1>
             <span class="information__line"><div class="block block--small">Mo</div> <div class="block">7.30 - 12</div> <div class="block">14 - 18</div></span>
             <span class="information__line"><div class="block block--small">Di</div> <div class="block">7.30 - 12</div> <div class="block">14 - 18</div></span>
-            <span class="information__line"><div class="block block--small">Mi</div> <div class="block"></div> <div class="block">14 - 20 *</div></span>
+            <span class="information__line"><div class="block block--small">Mi</div> <div class="block"></div> <div class="block">14 - 20</div></span>
             <span class="information__line"><div class="block block--small">Do</div> <div class="block">7.30 - 12</div> <div class="block">14 - 18</div></span>
             <span class="information__line"><div class="block block--small">Fr</div> <div class="block">7.30 - 14</div></span>
         </div>
     </div>
     <hr>
     <div class="hello">
-        <p>Herzlich Willkommen in unserer Zahnarztpraxis am Hülser Markt! Gemeinsam ist jeder stärker. Wir beide möchten Ihnen mit unserem Wissen und unserer Erfahrung zeitgemäße Zahnmedizin anbieten. Rufen Sie an, schreiben Sie uns oder kommen Sie am besten einfach vorbei. Wir sind für Sie da!</p>
+        <p>Herzlich Willkommen in unserer Zahnarztpraxis am Hülser Markt</p>
+        <p>Gemeinsam ist jeder stärker. Wir beide möchten Ihnen mit unserem Wissen und unserer Erfahrung zeitgemäße Zahnmedizin anbieten. Unser wichtigstes Ziel: Sie sollen sich wohl fühlen. Rufen Sie an, schreiben Sie uns oder kommen Sie am besten einfach vorbei. Wir sind für Sie da!</p>
     </div>
+    <hr>
+    <%= partial "services" %>
+    <hr>
+    <%= partial "footer" %>
+
 </div>

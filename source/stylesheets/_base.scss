@@ -1,0 +1,182 @@
+* {
+    font-size: 16px;
+}
+
+body {
+    background: #fff;
+    font-family: 'Open Sans', sans-serif;
+    color: #222233;
+    margin: 0;
+    padding: 0;
+}
+
+p {
+    line-height: 1.5em;
+}
+
+button {
+    background: #fff;
+    border: 1px #444 solid;
+    line-height: 1.5;
+    border-radius: .3rem;
+    display: inline-block;
+    font-weight: 400;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: .25rem;
+    -webkit-transition: background-color .15s ease-in-out, border-color .15s ease-in-out, -webkit-box-shadow .15s ease-in-out;
+}
+
+.footer {
+    padding: 1em;
+    margin-bottom: 5em;
+
+    p {
+        text-decoration: none;
+    }
+}
+
+.mt2 {
+    margin-top: 2em;
+}
+
+.block {
+    white-space: nowrap;
+    margin: 0 0.5em;
+    min-width: 4em;
+    &.block--auto {
+        width: auto;
+    }
+    &:first-child {
+        margin-left: 0; //0.5em;
+    }
+
+    &.block--small {
+        width: 2em;
+    }
+    &.block--large {
+        width: 6em;
+    }
+}
+
+html {
+    min-height: 100%;
+}
+
+.main {
+    width: 660px;
+}
+
+.footer {
+    text-align: center;
+    a {
+        color: #000;
+    }
+}
+
+
+hr {
+    margin: 40px;
+    text-align: center;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+
+hr:after {
+    content: "* * *";
+    color: #222233;
+}
+
+@media screen and (max-width: 480px) {
+    hr {
+        margin: 20px;
+    }
+}
+
+
+@media all and (max-width: 660px) {
+    .faces {
+        width: 100% !important;
+    }
+
+
+    .logo__claim {
+        a {
+            font-size: 1.3em !important;
+        }
+    }
+
+    .logo__dentist {
+        font-size: 1em !important;
+    }
+
+    .main {
+        width: 100% !important;
+    }
+
+    .hello {
+        width: 100% !important;
+        p {
+            padding: 1em;
+        }
+    }
+
+    .imprint {
+        width: 100% !important;
+        p {
+            padding: 1em;
+        }
+    }
+}
+
+.wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.logo {
+    margin: 2em 0;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+
+    .logo__link {
+        text-decoration: none;
+        color: #000;
+    }
+
+    .logo__claim {
+        a {
+            font-size: 1.6em;
+        }
+        font-weight: 600;
+        line-height: 1.9em;
+    }
+
+    .logo__dentist {
+        font-size: 1.3em;
+        line-height: 1.5em;
+    }
+}
+
+.hello {
+    width: 660px;
+}
+
+.imprint {
+    width: 660px;
+    h1 {
+        font-weight: 600;
+    }
+}
+
+.faces {
+    width: 660px;
+    height: auto;
+}
