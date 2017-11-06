@@ -1,6 +1,9 @@
 # Activate and configure extensions
 # https://middlemanapp.com/advanced/configuration/#configuring-extensions
 
+require 'builder'
+
+
 activate :autoprefixer do |prefix|
   prefix.browsers = "last 2 versions"
 end
@@ -42,14 +45,12 @@ page '/*.txt', layout: false
 # https://middlemanapp.com/advanced/configuration/#environment-specific-settings
 
 
-
-
-configure :build do
-activate :relative_assets
-activate :asset_hash
-end
+# page "/sitemap.xml", :layout => false
 
 configure :build do
-  activate :minify_css
-  activate :minify_javascript
+    activate :relative_assets
+    activate :asset_hash
+
+    activate :minify_css
+    activate :minify_javascript
 end

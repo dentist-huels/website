@@ -14,6 +14,20 @@ p {
     line-height: 1.5em;
 }
 
+.news {
+    padding:2em;
+    background: #fafafa;
+    position:absolute;
+    right: 0;
+    left:0;
+    text-align: center;
+    font-style: italic;
+}
+
+.copyright {
+    font-size: 1rem;
+}
+
 button {
     background: #fff;
     border: 1px #444 solid;
@@ -47,12 +61,12 @@ button {
 .block {
     white-space: nowrap;
     margin: 0 0.5em;
-    min-width: 4em;
+    width: 4em;
     &.block--auto {
         width: auto;
     }
     &:first-child {
-        margin-left: 0; //0.5em;
+        margin-left: 0;
     }
 
     &.block--small {
@@ -141,7 +155,9 @@ hr:after {
 }
 
 .logo {
+
     margin: 2em 0;
+    margin-top: 8em; /// FOR THE NEWS
     display: flex;
     flex-direction: column;
     text-align: center;

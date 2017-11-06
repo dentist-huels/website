@@ -1,4 +1,37 @@
+.services {
+    display: flex;
+    flex-direction: row;
 
+    justify-content: center;
+    .service {
+        width: 8em;
+        cursor: pointer;
+
+        color: #000;
+        text-decoration: none;
+
+        .text {
+            color: #000;
+            text-decoration: none;
+            font-size: 0.9em;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            height: 3em;
+            font-weight: 600;
+        }
+
+        .icon {
+            text-align: center;
+            margin: 0.6em;
+            img {
+                width: 4em;
+                height: auto;
+            }
+        }
+    }
+}
 
 @media all and (max-width: 660px) {
     .services {
@@ -8,13 +41,10 @@
             padding-bottom: 1em;
         }
     }
-    .service__info {
-
-        padding: 0.5em !important;
-    }
 
     .subservice {
-        width: 100% !important;
+        width: 90% !important;
+        margin: auto;
     }
 }
 
@@ -25,7 +55,7 @@
 .owl-nav {
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-between;
 
     text-align: center;
 
@@ -77,47 +107,17 @@
     }
 }
 
-.service__info {
-    display: none;
-    position: fixed;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background: #fff;
-    padding: 2em;
-
-    overflow-y: auto;
-
-
-
-    p {
-        line-height: 1.7em;
-        font-size: 1.2em;
-    }
-
-
-    .service__info--close {
-        padding: 2em;
-        text-align: center;
-    }
-}
-
-
-
-
 .subservice {
-
     .subservice__head {
         margin-top: 3em;
         .text {
-            font-size: 0.9em;
+            font-size: 1.6em;
+            font-weight: 600;
             text-align: center;
             display: flex;
             flex-direction: column;
             justify-content: center;
             height: 3em;
-            font-weight: 600;
         }
 
         .icon {
@@ -137,33 +137,13 @@
 }
 
 
+p {
+    line-height: 1.7em;
+    font-size: 1.2em;
+}
 
 
-.services {
-    display: flex;
-    flex-direction: row;
-
-        justify-content: center;
-    .service {
-        width: 8em;
-        cursor: pointer;
-        .text {
-            font-size: 0.9em;
-            text-align: center;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            height: 3em;
-            font-weight: 600;
-        }
-
-        .icon {
-            text-align: center;
-            margin: 0.6em;
-            img {
-                width: 4em;
-                height: auto;
-            }
-        }
-    }
+.service__info--close {
+    padding: 2em;
+    text-align: center;
 }

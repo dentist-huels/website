@@ -5,14 +5,10 @@ null==d?void 0:d))},attrHooks:{type:{set:function(a,b){if(!o.radioValue&&"radio"
 
 
 $(document).ready(function() {
-    $('.service__info--close button').click(function(event) {
-        $('.service__info').fadeOut();
 
-    });
-
-    $('.service').click(function(event) {
-        $('.' + $(this).data('rel')).fadeIn();
-    });
+$('.service__info--close button').click(function() {
+    location.href="index.html";
+});
 
     $('.owl-carousel').owlCarousel({
         loop: true,
