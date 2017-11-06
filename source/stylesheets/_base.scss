@@ -169,15 +169,19 @@ hr:after {
 
     .logo__claim {
         a {
-            font-size: 1.6em;
+            font-size: 1.8em;
+            font-family: 'Nunito Sans', sans-serif;
+    letter-spacing: 3px;
         }
         font-weight: 600;
-        line-height: 1.9em;
+        line-height: 2.2em;
     }
 
     .logo__dentist {
-        font-size: 1.3em;
-        line-height: 1.5em;
+        font-size: 1.1em;
+        line-height: 1.7em;
+        font-family: 'Nunito Sans', sans-serif;
+        letter-spacing: 0;
     }
 }
 
