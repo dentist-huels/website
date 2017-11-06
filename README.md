@@ -1,2 +1,2 @@
-# huels
-# dentist-huels.github.io
+# Middleman Project
+This is the workspace for zahnarzt-huels.de
