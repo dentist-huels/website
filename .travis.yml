@@ -1,0 +1,16 @@
+language: ruby
+rvm:
+  - 2.2.3
+before_install:
+  - rvm install 2.2.3
+install:
+  - bundle install --path vendor/bundle
+script:
+  - git config --global user.name '${GIT_NAME}'
+  - git config --global user.email '${GIT_NAME}'
+  - git remote set-url origin https://dentist-huels:${GH_TOKEN}@github.com/dentist-huels/dentist-huels.github.io.git
+  - bundle exec middleman build
+  - bundle exec middleman deploy
+branches:
+  only:
+  - master
