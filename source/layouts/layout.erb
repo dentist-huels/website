@@ -35,31 +35,7 @@
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="msapplication-TileImage" content="images/favicon/ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
-    
-    <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.css" />
-    <script src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.js"></script>
-    <script>
-    window.addEventListener("load", function(){
-    window.cookieconsent.initialise({
-      "palette": {
-        "popup": {
-          "background": "#ffffff"
-        },
-        "button": {
-          "background": "transparent",
-          "border": "#000000",
-          "text": "#000000"
-        }
-      },
-      "position": "top",
-      "static": true,
-      "content": {
-        "message": "Durch die Nutzung unserer Website stimmen Sie der Verwendung von Cookies zur Verbesserung des Online-Erlebnisses zu.",
-        "dismiss": "OK",
-        "link": "Mehr erfahren"
-      }
-    })});
-    </script>
+ 
     <%= stylesheet_link_tag "site" %>
     <%= javascript_include_tag "site" %>
   </head>
@@ -72,7 +48,7 @@
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
-      gtag('config', 'UA-109209802-1');
+      gtag('config', 'UA-109209802-1', { 'anonymize_ip': true });
     </script>
   </body>
 </html>
