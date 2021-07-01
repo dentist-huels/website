@@ -55,8 +55,3 @@ configure :build do
     activate :minify_html
     activate :minify_javascript
 end
-
-activate :deploy do |deploy|
-    deploy.deploy_method = :git
-    deploy.branch   = 'master'
-end
